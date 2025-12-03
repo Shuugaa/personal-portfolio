@@ -19,7 +19,7 @@ const Contact: React.FC = () => (
       Je réponds rapidement par mail !
     </p>
     <a
-      href={"mailto:" + "cmp2cfw8n" + "&#64;" + "mozmail.com"}
+      href={"mailto:" + "cmp2cfw8n" + "@" + "mozmail.com"}
       className="px-6 py-3 bg-gradient-to-r from-blue-500 to-pink-500 text-white font-bold rounded-full shadow-lg hover:scale-105 hover:from-blue-600 hover:to-pink-600 transition-transform duration-200 z-10 animate-pop"
     >
       Envoyer un mail

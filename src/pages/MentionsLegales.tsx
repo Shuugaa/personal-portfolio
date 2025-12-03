@@ -9,7 +9,7 @@ const MentionsLegales: React.FC = () => (
       Portfolio personnel<br />
       Contact :
       <a
-        href={"mailto:" + "cmp2cfw8n" + "&#64;" + "mozmail.com"}
+        href={"mailto:" + "cmp2cfw8n" + "@" + "mozmail.com"}
         className="text-blue-600 hover:underline"
       >
       &nbsp; cmp2cfw8n&#64;mozmail.com
