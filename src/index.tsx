@@ -14,14 +14,12 @@ function OverlayedApp() {
   const [showLoader, setShowLoader] = useState(true);
 
   useEffect(() => {
-    const timeout = setTimeout(() => setShowLoader(false), 400); // 600ms ou à ajuster
+    const timeout = setTimeout(() => setShowLoader(false), 600); // 600ms ou à ajuster
     return () => clearTimeout(timeout);
   }, []);
 
-  return (
-    <>
-      <App />
-      {showLoader && <Loader />}
-    </>
-  );
+  if (showLoader) {
+    return <Loader />;
+  }
+  return <App />;
 }

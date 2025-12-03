@@ -65,24 +65,28 @@ const Projects: React.FC = () => {
   return (
     <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 p-6 rounded shadow">
       <h2 className="text-2xl font-bold mb-6">Projets</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project, idx) => (
-          <div key={idx} className={`rounded-lg shadow-lg bg-gray-100 dark:bg-gray-800 p-5 flex flex-col h-full border-t-4 border-${project.color}-500`}>
-            <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+          <div
+            key={idx}
+            className={`group relative rounded-2xl shadow-2xl bg-gradient-to-br from-white via-gray-100 to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 p-6 flex flex-col h-full border-t-4 border-${project.color}-500 transition-transform duration-300 hover:scale-105 hover:shadow-3xl animate-pop`}
+          >
+            <span className={`absolute top-4 right-4 px-3 py-1 text-xs font-bold rounded-full bg-${project.color}-100 text-${project.color}-700 dark:bg-${project.color}-900 dark:text-${project.color}-200 shadow`}>{project.color === 'blue' ? 'React' : 'Node.js'}</span>
+            {project.image && (
+              <img src={project.image} alt={project.title} className="w-full h-52 object-cover rounded-xl mb-4 shadow-lg" />
+            )}
+            <h3 className="text-2xl font-bold mb-2 text-${project.color}-700 dark:text-${project.color}-300">{project.title}</h3>
             <p className="text-gray-700 dark:text-gray-300 mb-2">{project.description}</p>
-            <ul className="list-disc list-inside text-gray-600 dark:text-gray-400 mb-2">
+            <ul className="list-disc list-inside text-gray-600 dark:text-gray-400 mb-4">
               {project.features.map((f, i) => <li key={i}>{f}</li>)}
             </ul>
-            {project.image && (
-              <img src={project.image} alt={project.title} className="w-full h-40 object-cover rounded mb-4" />
-            )}
             <button
               onClick={() => setSelected(idx)}
-              className={`mt-auto inline-block px-4 py-2 rounded transition
+              className={`mt-auto inline-block px-5 py-2 rounded-full font-semibold shadow bg-gradient-to-r
                 ${project.color === 'blue'
-                  ? 'bg-blue-600 hover:bg-blue-700 text-white'
-                  : 'bg-green-600 hover:bg-green-700 text-white'}
-              `}
+                  ? 'from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white'
+                  : 'from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white'}
+                transition-transform duration-200 group-hover:scale-110 animate-pop`}
             >
               Voir le projet
             </button>

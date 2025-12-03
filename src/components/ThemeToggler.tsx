@@ -74,7 +74,7 @@ export const ThemeToggler: React.FC = () => {
   return (
     <div
       className={`flex flex-col items-center gap-2 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded shadow-lg transition-all duration-200
-        ${open ? 'px-3 py-2' : 'px-2 py-2 w-12 h-12 justify-center'}`}
+        ${open ? 'px-3 py-2' : 'px-2 py-2 w-12 h-12 justify-center'} animate-pop`}
       tabIndex={0}
       style={{ outline: 'none' }}
     >
