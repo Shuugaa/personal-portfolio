@@ -19,10 +19,16 @@ const Home: React.FC = () => (
         <path d="M4 20c0-4 4-6 8-6s8 2 8 6" />
       </svg>
     </span>
-    <h1 className="text-4xl font-extrabold text-gray-900 dark:text-white mb-2 z-10">Samy MAISSE</h1>
-    <h2 className="text-xl font-semibold text-purple-700 dark:text-purple-300 mb-4 z-10">Développeur web freelance</h2>
+    <h1 className="text-4xl font-extrabold text-gray-900 dark:text-white mb-2 z-10">ShuuDev</h1>
+    <h2 className="text-xl font-semibold text-purple-700 dark:text-purple-300 mb-2 z-10">Développement web & applications</h2>
+    <div className="text-center text-gray-700 dark:text-gray-200 mb-4 z-10 text-sm">
+      <span className="block font-semibold">Auto-entrepreneur</span>
+      <span className="block">SIRET : 902 278 472 00029</span>
+      <span className="block">35 Rue Georges Clémenceau, 77210 Avon</span>
+      <span className="block">contact@shuudev.com</span>
+    </div>
     <p className="text-center text-lg text-gray-700 dark:text-gray-200 mb-6 z-10 max-w-xl">
-      Bienvenue sur mon portfolio ! Passionné par le développement web moderne, je conçois des applications performantes et élégantes avec React, TypeScript, Node.js et Tailwind CSS.
+      Bienvenue sur le site de ShuuDev ! Passionné par le développement web moderne, je conçois des applications performantes et élégantes avec React, TypeScript, Node.js et Tailwind CSS.
     </p>
     <a
       href="/contact"

@@ -14,12 +14,18 @@ const Contact: React.FC = () => (
       </svg>
     </div>
     <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white mb-2 z-10">Contact</h2>
+    <div className="text-center text-gray-700 dark:text-gray-200 mb-2 z-10 text-sm">
+      <span className="block font-semibold">ShuuDev &mdash; Auto-entrepreneur</span>
+      <span className="block">SIRET : 902 278 472 00029</span>
+      <span className="block">35 Rue Georges Clémenceau, 77210 Avon</span>
+      <span className="block">contact@shuudev.com</span>
+    </div>
     <p className="text-lg text-gray-700 dark:text-gray-200 mb-6 z-10 text-center max-w-lg">
-      Tu veux discuter d’un projet, d’une mission ou simplement dire bonjour ?<br />
+      Vous souhaitez discuter d’un projet, d’une mission ou simplement dire bonjour ?<br />
       Je réponds rapidement par mail !
     </p>
     <a
-      href={"mailto:" + "cmp2cfw8n" + "@" + "mozmail.com"}
+      href="mailto:contact@shuudev.com"
       className="px-6 py-3 bg-gradient-to-r from-blue-500 to-pink-500 text-white font-bold rounded-full shadow-lg hover:scale-105 hover:from-blue-600 hover:to-pink-600 transition-transform duration-200 z-10 animate-pop"
     >
       Envoyer un mail
