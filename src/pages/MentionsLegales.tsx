@@ -5,14 +5,16 @@ const MentionsLegales: React.FC = () => (
     <h2 className="text-2xl font-bold mb-4">Mentions légales</h2>
     <h3 className="text-lg font-semibold mt-4 mb-2">Éditeur du site</h3>
     <p>
-      Samy MAISSE<br />
-      Portfolio personnel<br />
+      ShuuDev (Samy MAISSE)<br />
+      Statut : Auto-entrepreneur<br />
+      SIRET : 902 278 472 00029<br />
+      Adresse : 35 Rue Georges Clémenceau, 77210 Avon, France<br />
       Contact :
       <a
-        href={"mailto:" + "cmp2cfw8n" + "&#64;" + "mozmail.com"}
+        href="mailto:contact@shuudev.com"
         className="text-blue-600 hover:underline"
       >
-      &nbsp; cmp2cfw8n&#64;mozmail.com
+        contact@shuudev.com
       </a>
     </p>
     <h3 className="text-lg font-semibold mt-4 mb-2">Hébergeur</h3>

@@ -32,7 +32,11 @@ const App: React.FC = () => {
         <div className="fixed top-3 right-6 z-50">
           <ThemeToggler />
         </div>
-        <footer className="text-center text-xs text-gray-500 mt-8 mb-2">
+        <footer className="text-center text-xs text-gray-500 mt-8 mb-2 flex flex-col gap-1">
+          <span>ShuuDev &mdash; Auto-entrepreneur</span>
+          <span>SIRET : 902 278 472 00029</span>
+          <span>35 Rue Georges Clémenceau, 77210 Avon</span>
+          <span>contact@shuudev.com</span>
           <Link to="/mentions-legales" className="hover:underline">Mentions légales</Link>
         </footer>
       </div>
