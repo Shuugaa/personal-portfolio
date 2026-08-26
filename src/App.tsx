@@ -1,47 +1,67 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, NavLink } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
-import Ecoride from './pages/Ecoride';
 import Contact from './pages/Contact';
-import { ThemeToggler } from './components/ThemeToggler';
 import MentionsLegales from './pages/MentionsLegales';
+import { ThemeToggler } from './components/ThemeToggler';
 
-const App: React.FC = () => {
-  return (
-    <Router>
-      <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300 relative">
-        <nav className="flex flex-col md:flex-row md:items-center md:justify-center py-6 mb-8 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 shadow-lg rounded-b-2xl">
-          <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8 justify-center items-center w-full">
-            <Link to="/" className="px-4 py-2 rounded-lg font-semibold text-white/90 dark:text-white/80 hover:bg-white/20 dark:hover:bg-gray-700 transition-colors duration-200 shadow-sm">Accueil</Link>
-            <Link to="/about" className="px-4 py-2 rounded-lg font-semibold text-white/90 dark:text-white/80 hover:bg-white/20 dark:hover:bg-gray-700 transition-colors duration-200 shadow-sm">À propos</Link>
-            <Link to="/projects" className="px-4 py-2 rounded-lg font-semibold text-white/90 dark:text-white/80 hover:bg-white/20 dark:hover:bg-gray-700 transition-colors duration-200 shadow-sm">Projets</Link>
-            <Link to="/contact" className="px-4 py-2 rounded-lg font-semibold text-white/90 dark:text-white/80 hover:bg-white/20 dark:hover:bg-gray-700 transition-colors duration-200 shadow-sm">Contact</Link>
-          </div>
-        </nav>
-        <main className="max-w-2xl mx-auto px-4 bg-white dark:bg-gray-900 transition-colors duration-300 rounded-2xl shadow-xl">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/ecoride" element={<Ecoride />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/mentions-legales" element={<MentionsLegales />} />
-          </Routes>
-        </main>
-        <div className="fixed top-3 right-6 z-50">
-          <ThemeToggler />
+const linkClass = ({ isActive }: { isActive: boolean }) =>
+  `text-sm ${isActive ? 'text-neutral-900 dark:text-white' : 'text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-200'}`;
+
+const App: React.FC = () => (
+  <Router>
+    <div className="min-h-screen flex flex-col bg-[#f6f5f2] text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100">
+      <header className="border-b border-neutral-200/80 dark:border-neutral-800 bg-[#f6f5f2]/90 dark:bg-neutral-950/90 backdrop-blur sticky top-0 z-20">
+        <div className="mx-auto max-w-3xl px-5 min-h-14 py-3 flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+          <Link to="/" className="font-semibold tracking-tight text-[15px] shrink-0">
+            Shuudev
+          </Link>
+          <nav className="flex flex-wrap items-center gap-4 sm:gap-6">
+            <NavLink to="/" end className={linkClass}>
+              Accueil
+            </NavLink>
+            <NavLink to="/about" className={linkClass}>
+              À propos
+            </NavLink>
+            <NavLink to="/projects" className={linkClass}>
+              Projets
+            </NavLink>
+            <NavLink to="/contact" className={linkClass}>
+              Contact
+            </NavLink>
+            <ThemeToggler />
+          </nav>
         </div>
-        <footer className="text-center text-xs text-gray-500 mt-8 mb-2 flex flex-col gap-1">
-          <span>ShuuDev &mdash; Auto-entrepreneur</span>
-          <span>SIRET : 902 278 472 00029</span>
-          <span>35 Rue Georges Clémenceau, 77210 Avon</span>
-          <span>contact@shuudev.com</span>
-          <Link to="/mentions-legales" className="hover:underline">Mentions légales</Link>
-        </footer>
-      </div>
-    </Router>
-  );
-};
+      </header>
+
+      <main className="flex-1 mx-auto w-full max-w-3xl px-5 py-14">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/mentions-legales" element={<MentionsLegales />} />
+        </Routes>
+      </main>
+
+      <footer className="border-t border-neutral-200 dark:border-neutral-800 text-xs text-neutral-500">
+        <div className="mx-auto max-w-3xl px-5 py-8 flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
+          <div className="flex flex-col gap-1">
+            <span>Shuudev — auto-entrepreneur</span>
+          </div>
+          <div className="flex flex-col gap-1 sm:items-end mt-4 sm:mt-0">
+            <a href="mailto:contact@shuudev.com" className="hover:text-neutral-800 dark:hover:text-neutral-300">
+              contact@shuudev.com
+            </a>
+            <Link to="/mentions-legales" className="hover:text-neutral-800 dark:hover:text-neutral-300">
+              Mentions légales
+            </Link>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </Router>
+);
 
 export default App;

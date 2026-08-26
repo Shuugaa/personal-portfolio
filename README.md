@@ -1,3 +1,8 @@
-# Portfolio
+# shuudev.com
 
-Ce projet a été initialisé avec npm.
+Copie de travail du site Shuudev (le repo public reste `Shuugaa/personal-portfolio`).
+
+```
+npm install
+npm run dev
+```

@@ -1,20 +1,16 @@
-import React from 'react';
-
 const Ecoride: React.FC = () => (
-  <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 p-6 rounded shadow">
-    <h2 className="text-2xl font-bold mb-6">Ecoride</h2>
-    <p className="mb-4">
-      Ecoride est une application de gestion de trajets éco-responsables développée avec React pour le front-end et Node.js (Express) pour le back-end.
-      Elle utilise à la fois une base de données PostgreSQL pour la gestion structurée des utilisateurs et trajets, et MongoDB pour le stockage flexible de données complémentaires.
+  <div className="max-w-xl">
+    <h1 className="text-3xl font-semibold tracking-tight">Ecoride</h1>
+    <p className="mt-5 text-neutral-600 dark:text-neutral-400 leading-relaxed">
+      Application de covoiturage développée de bout en bout (projet de formation). Front React /
+      TypeScript, API Node.js (Express), PostgreSQL pour les comptes et trajets, MongoDB à côté.
     </p>
-    <ul className="list-disc list-inside mb-4 text-gray-700 dark:text-gray-300">
-      <li>Front-end en React et TypeScript</li>
-      <li>Back-end API REST avec Node.js et Express</li>
-      <li>Base de données relationnelle PostgreSQL</li>
-      <li>Stockage NoSQL avec MongoDB</li>
-      <li>Interface utilisateur moderne et responsive</li>
-      <li>Authentification et gestion des utilisateurs</li>
-      <li>Intégration d’API externes pour les données de transport (Google Maps API, Nominatim)</li>
+    <ul className="mt-6 text-sm text-neutral-700 dark:text-neutral-300 list-disc list-inside space-y-1">
+      <li>Front-end React et TypeScript</li>
+      <li>API REST Express</li>
+      <li>PostgreSQL et MongoDB</li>
+      <li>Authentification</li>
+      <li>Nominatim / Google Maps</li>
     </ul>
   </div>
 );
