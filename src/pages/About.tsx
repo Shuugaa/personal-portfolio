@@ -19,9 +19,8 @@ const About: React.FC = () => (
       et plugins WooCommerce.
     </p>
     <p className="mt-4 text-neutral-600 dark:text-neutral-400 leading-relaxed">
-      Le projet le plus abouti est Budgetracker : trésorerie, import de relevés, chiffrement
-      côté client. Il y a aussi Restock Mail (WooCommerce) et Ecoride (covoiturage, formation).
-      Ce site en fait partie.
+      Budgetracker : trésorerie, import de relevés, chiffrement côté client. Aussi Restock Mail
+      (WooCommerce) et Ecoride (covoiturage, formation). Ce site en fait partie.
     </p>
     <div className="mt-8 flex flex-wrap gap-2">
       {skills.map((skill) => (

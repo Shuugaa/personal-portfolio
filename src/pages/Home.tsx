@@ -28,8 +28,7 @@ const Home: React.FC = () => (
       Samy Maisse
     </h1>
     <p className="mt-5 text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-xl">
-      Auto-entrepreneur. Apps web et plugins WooCommerce. Budgetracker est le projet le plus
-      abouti.
+      Auto-entrepreneur. Apps web et plugins WooCommerce.
     </p>
     <div className="mt-8 flex flex-wrap gap-3">
       <Link
