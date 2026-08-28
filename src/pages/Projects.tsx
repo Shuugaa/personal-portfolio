@@ -2,6 +2,13 @@ import { Link } from 'react-router-dom';
 
 const items = [
   {
+    to: '/projects/formx',
+    tag: 'API · Factur-X',
+    title: 'FormX',
+    text: 'Micro-SaaS de facturation électronique : API, worker Go, PDF/A-3 Factur-X.',
+    points: ['Node / Fastify + Go', 'Redis, Docker Compose', 'formx.shuudev.com'],
+  },
+  {
     to: '/projects/budgetracker',
     tag: 'App web',
     title: 'Budgetracker',

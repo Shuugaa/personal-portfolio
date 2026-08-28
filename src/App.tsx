@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link, NavLink } from 'react-rou
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
+import FormX from './pages/FormX';
 import Budgetracker from './pages/Budgetracker';
 import RestockMail from './pages/RestockMail';
 import Ecoride from './pages/Ecoride';
@@ -43,6 +44,7 @@ const App: React.FC = () => (
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/formx" element={<FormX />} />
           <Route path="/projects/budgetracker" element={<Budgetracker />} />
           <Route path="/projects/restock-mail" element={<RestockMail />} />
           <Route path="/projects/ecoride" element={<Ecoride />} />

@@ -6,8 +6,10 @@ const skills = [
   'WooCommerce',
   'React',
   'TypeScript',
+  'Next.js',
   'Node.js',
   'Go',
+  'Redis',
   'PostgreSQL',
   'Supabase',
   'Git',
@@ -20,11 +22,12 @@ const About: React.FC = () => (
       Shuudev, c’est Samy Maisse. Auto-entrepreneur en France.
     </p>
     <p className="mt-4 text-neutral-600 dark:text-neutral-400 leading-relaxed">
-      Je développe des applications web et des plugins WooCommerce : interfaces, API, données,
-      e-mails. Du code qu’on ouvre ensuite, pas seulement une page pour le montrer.
+      Je développe des applications web, de la facturation électronique (Factur-X), et des
+      plugins WooCommerce : interfaces, API, données. Du code qu’on ouvre ensuite, pas
+      seulement une page pour le montrer.
     </p>
     <p className="mt-4 text-neutral-600 dark:text-neutral-400 leading-relaxed">
-      React et TypeScript d’un côté, PHP et WordPress de l’autre. Postgres, Node, un peu de Go.
+      React, TypeScript et Next.js d’un côté, PHP et WordPress de l’autre. Postgres, Node, Go.
     </p>
     <div className="mt-8 flex flex-wrap gap-2">
       {skills.map((skill) => (
