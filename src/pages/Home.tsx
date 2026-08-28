@@ -5,7 +5,7 @@ const featured = [
     to: '/projects/formx',
     tag: 'API · Factur-X',
     title: 'FormX',
-    text: 'Factures électroniques via API : JSON in, PDF Factur-X out. Node, Go, Redis.',
+    text: 'JSON in, PDF Factur-X dans la même requête. Node, Go, Redis.',
   },
   {
     to: '/projects/budgetracker',

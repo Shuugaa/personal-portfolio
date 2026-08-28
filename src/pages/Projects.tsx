@@ -5,8 +5,8 @@ const items = [
     to: '/projects/formx',
     tag: 'API · Factur-X',
     title: 'FormX',
-    text: 'Micro-SaaS de facturation électronique : API, worker Go, PDF/A-3 Factur-X.',
-    points: ['Node / Fastify + Go', 'Redis, Docker Compose', 'formx.shuudev.com'],
+    text: 'Micro-SaaS de facturation électronique : JSON in, PDF Factur-X dans la même requête. Worker Go, file Redis.',
+    points: ['Sync par défaut, webhook en option', 'Node / Fastify + Go', 'formx.shuudev.com'],
   },
   {
     to: '/projects/budgetracker',
