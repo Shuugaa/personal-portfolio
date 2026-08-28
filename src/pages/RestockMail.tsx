@@ -2,17 +2,14 @@ import { Link } from 'react-router-dom';
 
 const steps = [
   {
-    n: '1',
     title: 'Rupture de stock',
     text: 'Le formulaire s’affiche sur la fiche produit. Le client laisse son e-mail.',
   },
   {
-    n: '2',
     title: 'Vous restockez',
     text: 'WooCommerce Action Scheduler envoie l’e-mail. Pas de cron à ajouter.',
   },
   {
-    n: '3',
     title: 'Vous voyez si ça part',
     text: 'WooCommerce → Restock Mail : waiting, queued, sent ou failed.',
   },
@@ -58,15 +55,14 @@ const RestockMail: React.FC = () => (
     </ul>
 
     <h2 className="mt-16 text-lg font-semibold tracking-tight">Fonctionnement</h2>
-    <ol className="mt-6 grid gap-8 sm:grid-cols-3">
+    <ul className="mt-6 grid gap-8 sm:grid-cols-3">
       {steps.map((s) => (
-        <li key={s.n}>
-          <p className="text-xs font-medium text-neutral-400">{s.n}</p>
-          <p className="mt-2 font-medium">{s.title}</p>
+        <li key={s.title}>
+          <p className="font-medium">{s.title}</p>
           <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">{s.text}</p>
         </li>
       ))}
-    </ol>
+    </ul>
   </div>
 );
 
