@@ -46,8 +46,7 @@ const FormX: React.FC = () => (
     <h1 className="mt-1 text-3xl font-semibold tracking-tight">FormX</h1>
     <p className="mt-5 text-neutral-600 dark:text-neutral-400 leading-relaxed">
       Micro-SaaS de facturation électronique : tu envoies une facture à l’API, tu reçois un PDF
-      Factur-X. Pour comprendre le fonctionnement (facture, PDF/A, file d’attente), et pour
-      pouvoir le proposer ensuite.
+      Factur-X.
     </p>
     <a
       href="https://formx.shuudev.com"
@@ -57,7 +56,6 @@ const FormX: React.FC = () => (
     >
       formx.shuudev.com
     </a>
-    <p className="mt-2 text-xs text-neutral-500">Pas encore public.</p>
 
     <h2 className="mt-14 text-lg font-semibold tracking-tight">Ce que ça fait</h2>
     <ul className="mt-6 grid gap-3">
