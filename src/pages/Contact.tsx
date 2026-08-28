@@ -2,7 +2,7 @@ const Contact: React.FC = () => (
   <div className="max-w-xl">
     <h1 className="text-3xl font-semibold tracking-tight">Contact</h1>
     <p className="mt-5 text-neutral-600 dark:text-neutral-400 leading-relaxed">
-      Plugin, mission, ou une question : un mail suffit.
+      Projet, mission, ou une question : un mail suffit.
     </p>
     <a
       href="mailto:contact@shuudev.com"

@@ -1,6 +1,15 @@
+import { Link } from 'react-router-dom';
+
 const Ecoride: React.FC = () => (
   <div className="max-w-xl">
-    <h1 className="text-3xl font-semibold tracking-tight">Ecoride</h1>
+    <Link
+      to="/projects"
+      className="text-sm text-neutral-500 hover:text-neutral-800 dark:hover:text-neutral-300"
+    >
+      ← Projets
+    </Link>
+    <p className="mt-8 text-xs text-neutral-500">Formation</p>
+    <h1 className="mt-1 text-3xl font-semibold tracking-tight">Ecoride</h1>
     <p className="mt-5 text-neutral-600 dark:text-neutral-400 leading-relaxed">
       Application de covoiturage développée de bout en bout (projet de formation). Front React /
       TypeScript, API Node.js (Express), PostgreSQL pour les comptes et trajets, MongoDB à côté.

@@ -2,6 +2,9 @@ import { BrowserRouter as Router, Routes, Route, Link, NavLink } from 'react-rou
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
+import Budgetracker from './pages/Budgetracker';
+import RestockMail from './pages/RestockMail';
+import Ecoride from './pages/Ecoride';
 import Contact from './pages/Contact';
 import MentionsLegales from './pages/MentionsLegales';
 import { ThemeToggler } from './components/ThemeToggler';
@@ -40,6 +43,9 @@ const App: React.FC = () => (
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/budgetracker" element={<Budgetracker />} />
+          <Route path="/projects/restock-mail" element={<RestockMail />} />
+          <Route path="/projects/ecoride" element={<Ecoride />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/mentions-legales" element={<MentionsLegales />} />
         </Routes>
