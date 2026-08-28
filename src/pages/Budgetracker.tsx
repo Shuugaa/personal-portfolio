@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const features = [
   'Trésorerie : comptes, charges, dettes, soldes à une date',
   'Mouvements, filtres, saisie manuelle',
-  'Import CSV / Excel (exports FR type BRED, Revolut, Caisse d’Épargne / CIC)',
+  'Import CSV / Excel de relevés',
   'Catégorisation par mots-clés, détection des virements internes',
   'Enveloppes par catégorie, prévisions et courbe sur plusieurs mois',
   'PWA installable (ordi et téléphone)',
@@ -20,7 +20,7 @@ const built = [
   },
   {
     title: 'Import de relevés',
-    text: 'Parseurs pour les exports bancaires courants (dates FR, débit/crédit, multi-produits Revolut). Les fichiers ne sont pas stockés : seulement date, libellé, montant, compte.',
+    text: 'Parseurs pour les exports CSV / Excel courants (dates FR, débit/crédit). Les fichiers ne sont pas stockés : seulement date, libellé, montant, compte.',
   },
   {
     title: 'Usage réel',
