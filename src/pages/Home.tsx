@@ -11,7 +11,7 @@ const featured = [
     to: '/projects/restock-mail',
     tag: 'WordPress',
     title: 'Shuudev Restock Mail',
-    text: 'Liste d’attente sur produit en rupture, e-mail au restock, journal queued / sent / failed.',
+    text: 'Liste d’attente rupture de stock, e-mail au restock. Sur WordPress.org.',
   },
   {
     to: '/projects/ecoride',

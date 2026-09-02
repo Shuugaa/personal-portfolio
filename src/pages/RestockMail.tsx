@@ -31,9 +31,14 @@ const RestockMail: React.FC = () => (
       WooCommerce n’écrit pas aux clients quand un produit revient. Ce plugin le fait, et
       montre si le mail a vraiment quitté le serveur. Les adresses restent sur la boutique.
     </p>
-    <p className="mt-3 text-xs text-neutral-500">
-      Accepté sur WordPress.org.
-    </p>
+    <a
+      href="https://wordpress.org/plugins/shuudev-restock-mail-for-woocommerce/"
+      className="mt-6 inline-flex items-center rounded-md bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 text-sm font-medium px-4 py-2.5 hover:opacity-90"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      WordPress.org
+    </a>
 
     <ul className="mt-14 grid gap-3">
       {[

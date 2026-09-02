@@ -13,7 +13,7 @@ const items = [
     tag: 'WordPress',
     title: 'Shuudev Restock Mail for WooCommerce',
     text: 'Liste d’attente sur produit en rupture, e-mail au restock, journal queued / sent / failed.',
-    points: ['Formulaire fiche produit + variations', 'Action Scheduler', 'Désinscription dans l’e-mail'],
+    points: ['WordPress.org', 'Action Scheduler', 'Désinscription dans l’e-mail'],
   },
   {
     to: '/projects/ecoride',
