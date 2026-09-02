@@ -9,13 +9,6 @@ const items = [
     points: ['Sync par défaut, webhook en option', 'Node / Fastify + Go', 'formx.shuudev.com'],
   },
   {
-    to: '/projects/budgetracker',
-    tag: 'App web',
-    title: 'Budgetracker',
-    text: 'Trésorerie, import de relevés, enveloppes. PWA, auth Supabase, chiffrement côté client.',
-    points: ['E2EE (AES-GCM)', 'Parseurs CSV / Excel FR', 'budget.shuudev.com'],
-  },
-  {
     to: '/projects/restock-mail',
     tag: 'WordPress',
     title: 'Shuudev Restock Mail for WooCommerce',

@@ -8,12 +8,6 @@ const featured = [
     text: 'JSON in, PDF Factur-X dans la même requête. Node, Go, Redis.',
   },
   {
-    to: '/projects/budgetracker',
-    tag: 'App web',
-    title: 'Budgetracker',
-    text: 'Suivi de trésorerie, import de relevés, enveloppes. PWA chiffrée côté client, que j’utilise au quotidien.',
-  },
-  {
     to: '/projects/restock-mail',
     tag: 'WordPress',
     title: 'Shuudev Restock Mail',
