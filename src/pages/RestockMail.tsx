@@ -32,7 +32,7 @@ const RestockMail: React.FC = () => (
       montre si le mail a vraiment quitté le serveur. Les adresses restent sur la boutique.
     </p>
     <p className="mt-3 text-xs text-neutral-500">
-      En revue sur WordPress.org — pas encore dans le catalogue.
+      Accepté sur WordPress.org.
     </p>
 
     <ul className="mt-14 grid gap-3">
